@@ -1,0 +1,201 @@
+<%= provide :title, '' %>
+<%= provide :description, '' %>
+<%= provide :keywords, '' %>
+
+<section id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-4 col-sm-12">
+          <h1>Indique um<br> Amigo e <br> ganhe um<br>desconto</h1>
+          <p>Convide seus amigos para ganharem 70% de desconto em
+          uma sessão experimental. Se eles fizerem uma assinatura,
+          você ganhará $15 (o que representa R$74.55) depois que
+          eles fizerem a primeira sessão da assinatura.</p>
+
+          <div id="referral-info">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="invite">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-4">
+          <h3 class='bold'>Convide seus amigos</h3>
+          <p>Envie seu link de referência para amigos e familiares
+          ou publique-o em seu site ou midias sociais</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class='bold'>Compartilhe a alegria</h3>
+          <p>Seus amigos ganham 70% de desconto na primeira
+          consulta do Virtus com qualquer psicólogo que cobrar
+          $7 ou mais.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class='bold'>Ganhe sem parar</h3>
+          <p>Se o seu amigo fizer a assinatura, você ganhará
+          R$74.55 de crédito na sua conta Virtus depois que
+          ele concluir a primeira sessão da assinatura.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-2">
+          <h1 class='bold text-center'>Vamos ver como funciona</h1>
+          <br />
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="share">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            </div>
+
+            <div class="panel-body">
+              <h1 class='bold'>Compartilhe com amigos e familiares</h1>
+              <p>Espalhe o prazer da aprendizagem de idiomas com as pessoas
+              de quem você mais gosta.</p>
+              <br />
+
+              <%= link_to '',
+              class: 'btn btn-primary btn-lg full-width' do %>
+                Copiar link de referência
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+            </div>
+
+            <div class="panel-body">
+              <h1 class='bold'>Compartilhe em redes sociais</h1>
+              <p>Alcance o máximo de pessoas possível! Compartilhe com sua
+              comunidade.</p>
+              <br />
+
+              <ul class="list-unstyled list-inline">
+                <li>
+                  <%= link_to '', target: :_blank do %>
+                    <i class="fa-brands fa-facebook-f"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to '', target: :_blank do %>
+                    <i class="fa-brands fa-x-twitter"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to '', target: :_blank do %>
+                    <i class="fa-brands fa-whatsapp"></i>
+                  <% end %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <h3 class='bold'>Suporte</h3>
+          <ul class="list-unstyled">
+            <li><%= link_to 'Precisa de ajuda?', '' %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h3 class='bold'>Contatos</h3>
+          <ul class="list-unstyled">
+            <li><p>🇧🇷 BR</p></li>
+            <li><p>Rua Cândido Falcão, 1155</p></li>
+            <li><p>São Borja, RS, 97670-000</p></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h3 class='bold'>Virtus nas redes</h3>
+          <ul class="list-unstyled">
+           <li>
+              <%= link_to 'https://linkedin.com/', target: :_blank do %>
+                <i class="fa-brands fa-linkedin-in" alt='Virtus | Linkedin'></i>
+                Linkedin
+              <% end %>
+            </li>
+            <li>
+              <%= link_to 'https://facebook.com/', target: :_blank do %>
+                <i class="fa-brands fa-facebook-f" alt='Virtus | Facebook'></i>
+                Facebook
+              <% end %>
+            </li>
+            <li>
+              <%= link_to 'https://instagram.com/', target: :_blank do %>
+                <i class="fa-brands fa-instagram" alt='Virtus | Instagram'></i>
+                Instagram
+              <% end %>
+            </li>
+            <li>
+              <%= link_to 'https://youtube.com/', target: :_blank do %>
+                <i class="fa-brands fa-youtube" alt='Virtus | Youtube'></i>
+                Youtube
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="navlLinks">
+    <div class="containter">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-2">
+              <p>&copy 2023-2024 Virtus Inc.</p>
+            </div>
+
+            <div class="col-md-8">
+              <ul class="list-unstyled list-inline">
+                <li><%= link_to 'Termos de Serviço', '#' %></li>
+                <li><%= link_to 'Política de Privacidade', '#' %></li>
+                <li><%= link_to 'Política de Cookies', '#' %></li>
+                <li><%= link_to 'Política de Reembolso', '#' %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

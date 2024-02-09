@@ -1,0 +1,162 @@
+<section id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Psicólogos e terapia online ao seu alcance</h1>
+        <p>Agora você pode conversar com um psicólogo online a qualquer
+        hora com sigilo e segurança aravés da nossa plataforma de telepsicologia</p>
+
+        <%= link_to '#',
+          class: 'btn btn-primary btn-lg top' do %>
+          Agende já sua consulta
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="psychologists">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-6">
+          <h2 class='bold'>Conheça nossos<br>profissionais licenciados.</h2>
+          <br />
+
+          <p>Profissionais de psicologia graduados e registrados no
+          Conselho Regional de Psicologia para exercício da profissão,
+          com cadastro específico -e-Psi- para atendimento por chamadas
+          de vídeo. Todos passam por um processo seguro de verificação
+          e credenciamento, além de aderirem a rigorosos códigos de ética
+          e sigilo.</p>
+          <br />
+
+          <%= form_for(:subject, method: :get, html: { class: 'form-inline'}) do |form| %>
+            <div class="form-group">
+              <%= f.label :speciality, 'Selecione um tópico', class: 'control-label' %>
+              <%= form.collection_select(:speciality_id, Specialty.all, :id, :name,
+              { include_blank: false }, { class: 'form-control', required: 'required' }) %>
+            </div>
+
+            <div class="checkbox">
+              <%= form.label :libras do %>
+                <%= form.check_box :libras %>
+                Atendimento em Libras
+              <% end %>
+            </div>
+
+            <div class="form-group">
+              <%= form.submit 'Procurar', class: 'btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class='bold text-center'>Alguns de nossos clientes</h1>
+        <br />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class='bold text-center'>Consulta online por vídeoconferência é tão eficaz quanto a presencial.</h1>
+        <br />
+
+        <%= link_to '',
+          class: 'btn btn-primary btn-lg top' do %>
+          Descobrir
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="navlinks">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <h4 class='bold'>Virtus</h4>
+          <ul class="list-unstyled">
+            <li><%= link_to 'Sobre Nós', '' %></li>
+            <li><%= link_to 'Carreiras', '' %></li>
+            <li><%= link_to 'Contato', '' %></li>
+            <li><%= link_to 'Imprensa', '' %></li>
+            <li><%= link_to 'Ouvidoria', '' %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class='bold'>Plataforma</h4>
+          <ul class="list-unstyled">
+            <li><%= link_to 'É eficaz online?', '' %></li>
+            <li><%= link_to 'Termos de uso', '' %></li>
+            <li><%= link_to 'Política de privacidade', '' %></li>
+            <li><%= link_to 'Código de ética', '' %></li>
+            <li><%= link_to 'Resolução do CFP', '' %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class='bold'>Explore</h4>
+          <ul class="list-unstyled">
+            <li><%= link_to 'Blog', '' %></li>
+            <li><%= link_to 'Cadastro', '' %></li>
+            <li><%= link_to 'Buscar psícologos', '' %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h4 class='bold'>Explore</h4>
+          <ul class="list-unstyled">
+            <li><%= link_to 'Blog', '' %></li>
+            <li><%= link_to 'Cadastro', '' %></li>
+            <li><%= link_to 'Buscar psícologos', '' %></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="list-unstyled">
+            <li><%= link_to 'Para você', '' %></li>
+            <li><%= link_to 'Para empresas', '' %></li>
+            <li><%= link_to 'Para psicólogos', '' %></li>
+          </ul>
+          <br />
+
+          <h6 class='bold'>Baixe o app</h6>
+          <ul class="list-unstyled list-inline">
+            <li>
+              <%= image_tag('app-store-badge.svg') %>
+            </li>
+            <li>
+              <%= image_tag('google-play-badge.svg') %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="disclaimer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p><span class='bold'>ATENÇÃO:</span> Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida.
+        Em caso de crise, ligue para 188 (CVV) ou acesse o site <%= link_to 'www.cvv.org.br', 'https://cvv.org.br', class: 'bold' %>. 
+        Em caso de emergência, procure atendimento em um hospital mais próximo.</p>
+      </div>
+    </div>
+  </div>
+</section>
